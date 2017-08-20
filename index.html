@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>codementum.org - Exoplanets</title>
+
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Istok+Web);
+  @import url(http://fonts.googleapis.com/css?family=Oswald);
+  @import url(http://codementum.org/lib/main.css);
+
+  #planet {
+    font-family: "Oswald", serif;
+  }
+
+  </style>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script src="lib/konami.pack.js"></script>
+
+<h1>
+  <a href="http://codementum.org" id="codementumIcon"></a>
+  Tecnologías Aplicadas a Business Intelligence
+</h1>
+
+<p>Trabajo Final: Datos Abiertos Provincia de Buenos Aires</p>
+<script src="http://codementum.org/lib/codementumIcon.js"></script>
+
+<script>
+
+var r = 960
+  , format = d3.format(".2f");
+
+var dFill = d3.scale.linear()
+    .domain([0, 0.30])
+    .range([d3.hsl('#FF0000'), d3.hsl('#006400')]);
+
+// making a custom scale
+// for colors
+function cFill(d){
+  if(d.name === 'alf Cen B b')
+    return d3.hsl('#E0E35D');
+
+  var val = d.prom_alumnos;
+  if(val >= 39 && val < 130)
+    return d3.hsl('#156B87');
+  if(val >= 130 && val < 170)
+    return d3.hsl('#876315'); 
+  if(val >= 170 && val < 210)
+    return d3.hsl('#543510'); 
+  else
+    return d3.hsl('#872815'); 
+}
+
+var bubble = d3.layout.pack()
+  .sort(null)
+  .value(function(d) { return d.cant_escuelas * d.cant_escuelas; })
+  .size([r, r]);
+
+var vis = d3.select("body").append("svg")
+  .attr("width", r)
+  .attr("height", r+100)
+  .attr("class", "bubble");
+
+//colorblindness
+vis.append("text")
+  .attr("id", "colorBlind")
+  .attr("x", r/2)
+  .attr("y", r/2 + 300)
+  .attr("fill", "white")
+  .style("fill-opacity", ".0")
+  .style("font-size", "750px")
+  .style("text-anchor", "middle")
+  .text("42");
+
+// distrito: node.distrito,    // muestro arriba
+vis.append("text")
+  .attr("id", "distrito")
+  .attr("x", 15)
+  .attr("y", 80)
+  .style("font-size", "32px")
+  .style("text-anchor", "left")
+  .text("Partido");
+
+// distance: node.escuelas_poblacion, // muestro arriba
+vis.append("text")
+  .attr("id", "escuelas_poblacion")
+  .attr("x", 15)
+  .attr("y", 110)
+  .style("text-anchor", "left")
+  .text("Cantidad de escuelas / Poblacion:");
+  
+// alumnos_poblacion info
+vis.append("text")
+  .attr("id", "alumnos_poblacion")
+  .attr("x", 15)
+  .attr("y", 140)
+  .style("text-anchor", "left")
+  .text("Total de Alumnos / Poblacion:");
+
+// prom_alumnos: node.prom_alumnos,
+vis.append("text")
+  .attr("id", "prom_alumnos")
+  .attr("x", 15)
+  .attr("y", 170)
+  .style("text-anchor", "left")
+  .text("Promedio de alumnos por escuela:");
+
+
+var colorByDistance = false;
+
+function toggleMetric() { 
+  if(!colorByDistance) {
+    colorByDistance = true;
+    d3.select('#distanceButton').style('fill', '#156B87');
+    d3.select('#massButton').style('fill', 'white');
+    updateNodes();
+  } else {
+    colorByDistance = false;
+    d3.select('#massButton').style('fill', '#156B87');
+    d3.select('#distanceButton').style('fill', 'white');
+    updateNodes();
+  }
+}
+
+// earth mass info
+vis.append("rect")
+  .attr("id", "massButton")
+  .attr("x", r/2 - 50)
+  .attr("y", 10)
+  .attr("width", 10)
+  .attr("height", 10)
+  .style("stroke", 'black')
+  .style("fill", "#156B87")
+  .on("click", toggleMetric);
+
+vis.append("rect")
+  .attr("id", "distanceButton")
+  .attr("x", r/2 - 50)
+  .attr("y", 30)
+  .attr("width", 10)
+  .attr("height", 10)
+  .style("stroke", 'black')
+  .style("fill", 'white')
+  .on("click", toggleMetric);
+
+vis.append("text")
+  .attr("id", "distanceButtonText")
+  .style("font-size", "12px")
+  .attr("x", r/2+15-50)
+  .attr("y", 19)
+  .text("según promedio de alumnos por escuela");
+
+vis.append("text")
+  .attr("id", "distanceButtonText")
+  .style("font-size", "12px")
+  .attr("x", r/2+15-50)
+  .attr("y", 39)
+  .text("según cantidad de escuelas / poblacion");
+
+var updateNodes = function() {
+  var circs = vis.selectAll("g.node").selectAll('circle');
+
+  circs.transition()
+    .duration(1000)
+    .style("fill", function(d) { 
+      if(!colorByDistance)
+        return cFill(d); 
+      else
+        return dFill(d.escuelas_poblacion);
+    });
+
+  circs.on("mouseout", function(d) {
+    if(colorByDistance) {
+      d3.select(this).style("fill", function(d) { return d3.hsl(dFill(d.escuelas_poblacion)); });
+    } else {
+      d3.select(this).style("fill", function(d) { return cFill(d); });
+    }
+  });
+}
+  
+d3.json("summarized_results.json", function(json) {
+  var node = vis.selectAll("g.node")
+      .data(bubble.nodes(classes(json))
+      .filter(function(d) { return !d.children; }))
+    .enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + d.x + "," + (80 + d.y) + ")"; });
+
+  node.append("title")
+    .text(function(d) { 
+      return d.distrito + 
+        "\n cantidad de escuelas: " + d.cant_escuelas + 
+        "\n poblacion: " + d.poblacion +
+        "\n total de alumnos: " + d.total_alumnos +
+        "\n desvio de numero de alumnos: " + d.desvio_alumnos; 
+    });
+
+  // initial values
+  node.append("circle")
+    .attr("r", function(d) { return Math.sqrt(d.r * d.r * .8); })
+    .style("fill", function(d) { return cFill(d); })
+    .on("mouseover", function(d) {
+      d3.select("#distrito").text(d.distrito);
+      d3.select("#escuelas_poblacion").text("Cantidad de escuelas / Poblacion: "+format(d.escuelas_poblacion) + "%" );
+      d3.select("#alumnos_poblacion").text("Total de Alumnos / Poblacion: "+d.alumnos_poblacion + "%");
+      d3.select("#prom_alumnos").text("Promedio de alumnos por escuela: "+d.prom_alumnos);
+
+      d3.select(this).style("fill", function(d) { return cFill(d).brighter(); });
+    })
+    .on("mouseout", function(d) {
+      d3.select(this).style("fill", function(d) { return cFill(d); });
+    });
+});
+
+// Returns a flattened hierarchy containing all leaf nodes under the root.
+function classes(root) {
+  var classes = [];
+
+  function recurse(name, node) {
+    if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
+    else classes.push({
+      distrito: node.distrito,    // muestro arriba
+      escuelas_poblacion: node.escuelas_poblacion, // muestro arriba
+      alumnos_poblacion: node.alumnos_poblacion,// muestro arriba
+      prom_alumnos: node.prom_alumnos,
+    
+      cant_escuelas: node.cant_escuelas, // muestro en el nodo
+      poblacion: node.poblacion,
+      total_alumnos: node.total_alumnos,
+      desvio_alumnos: node.desvio_alumnos
+    });
+  }
+
+  recurse(null, root);
+  return {children: classes};
+}
+
+function colorBlind(){
+  var circs = vis.selectAll("g.node").selectAll('circle');
+  circs.transition()
+    .duration(1000)
+    .style("fill-opacity", ".7");
+
+  vis.transition()
+   .duration(1000)
+   .select("text#colorBlind")
+   .attr("fill", "#a9a9a9")
+   .style("fill-opacity", ".7");
+}
+</script>
+
+<script>
+(function (){
+  "use strict";
+
+  var konami = new Konami();
+  
+  konami.code = function() {
+    colorBlind();  
+  };
+  
+  konami.iphone.code = function() {
+    colorBlind();  
+  };
+  
+  konami.load()
+}());
+
+console.log('(after you\'re done, try the konami code: up, up, down, down, left, right, left, right, b, a, enter - refresh to start over)');
+</script>
+
+<footer>
+  <a href="https://github.com/citin" rel="author">Andrés Bernardi</a> <br>
+  <a href="../" rel="author">Sergio Barragán</a>
+</footer>
