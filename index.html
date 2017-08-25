@@ -34,6 +34,10 @@ var dFill = d3.scale.linear()
     .domain([0, 0.30])
     .range([d3.hsl('#FF0000'), d3.hsl('#006400')]);
 
+var sectorFill = d3.scale.linear()
+    .domain([0, 0.7])
+    .range([d3.hsl('#F5F5F5'), d3.hsl('#556B2F')]);
+
 // making a custom scale
 // for colors
 function cFill(d){
@@ -105,20 +109,30 @@ vis.append("text")
   .style("text-anchor", "left")
   .text("Promedio de alumnos por escuela:");
 
-
-var colorByDistance = false;
+var colorBy = 'distance';
 
 function toggleMetric() { 
-  if(!colorByDistance) {
-    colorByDistance = true;
+  console.log($(this).attr('id'));
+  if( $(this).attr('id') == "distanceButton" ) {
+    colorBy = 'distance';
     d3.select('#distanceButton').style('fill', '#156B87');
     d3.select('#massButton').style('fill', 'white');
+    d3.select('#sectorButton').style('fill', 'white');
     updateNodes();
   } else {
-    colorByDistance = false;
-    d3.select('#massButton').style('fill', '#156B87');
-    d3.select('#distanceButton').style('fill', 'white');
-    updateNodes();
+    if( $(this).attr('id') == "massButton" ) {
+      colorBy = 'mass';
+      d3.select('#massButton').style('fill', '#156B87');
+      d3.select('#distanceButton').style('fill', 'white');
+      d3.select('#sectorButton').style('fill', 'white');
+      updateNodes();
+    } else {
+      colorBy = 'sector';
+      d3.select('#sectorButton').style('fill', '#156B87');
+      d3.select('#distanceButton').style('fill', 'white');
+      d3.select('#massButton').style('fill', 'white');
+      updateNodes();
+    }
   }
 }
 
@@ -143,6 +157,16 @@ vis.append("rect")
   .style("fill", 'white')
   .on("click", toggleMetric);
 
+vis.append("rect")
+  .attr("id", "sectorButton")
+  .attr("x", r/2 - 50)
+  .attr("y", 50)
+  .attr("width", 10)
+  .attr("height", 10)
+  .style("stroke", 'black')
+  .style("fill", 'white')
+  .on("click", toggleMetric);
+
 vis.append("text")
   .attr("id", "distanceButtonText")
   .style("font-size", "12px")
@@ -157,28 +181,43 @@ vis.append("text")
   .attr("y", 39)
   .text("según cantidad de escuelas / poblacion");
 
+vis.append("text")
+  .attr("id", "distanceButtonText")
+  .style("font-size", "12px")
+  .attr("x", r/2+15-50)
+  .attr("y", 59)
+  .text("según cantidad de escuelas publicas y privadas");
+
 var updateNodes = function() {
   var circs = vis.selectAll("g.node").selectAll('circle');
 
   circs.transition()
     .duration(1000)
     .style("fill", function(d) { 
-      if(!colorByDistance)
-        return cFill(d); 
-      else
+      if(colorBy == 'distance')
         return dFill(d.escuelas_poblacion);
+      else if (colorBy == 'mass') {
+        return cFill(d); 
+      } else {
+        return sectorFill(d.cant_privados);
+      }
     });
 
+  // todo: add mouseover 3 cases
+
   circs.on("mouseout", function(d) {
-    if(colorByDistance) {
+
+    if(colorBy == 'distance')
       d3.select(this).style("fill", function(d) { return d3.hsl(dFill(d.escuelas_poblacion)); });
-    } else {
+    else if (colorBy == 'mass') {
       d3.select(this).style("fill", function(d) { return cFill(d); });
+    } else {
+      d3.select(this).style("fill", function(d) { return d3.hsl(sectorFill(d.cant_privados)); });
     }
   });
 }
   
-d3.json("summarized_results.json", function(json) {
+d3.json("results.json", function(json) {
   var node = vis.selectAll("g.node")
       .data(bubble.nodes(classes(json))
       .filter(function(d) { return !d.children; }))
@@ -227,7 +266,9 @@ function classes(root) {
       cant_escuelas: node.cant_escuelas, // muestro en el nodo
       poblacion: node.poblacion,
       total_alumnos: node.total_alumnos,
-      desvio_alumnos: node.desvio_alumnos
+      desvio_alumnos: node.desvio_alumnos,
+      cant_estatales: node.cant_estatales,
+      cant_privados: (node.cant_privados / node.cant_escuelas)
     });
   }
 
