@@ -2,7 +2,7 @@
   "name": "resultados",
   "children": [
     {
-      "alumos_poblacion": 30.94,
+      "alumnos_poblacion": 30.94,
       "cant_escuelas": 78,
       "cant_estatales": 67,
       "cant_privados": 11,
@@ -14,7 +14,7 @@
       "total_alumnos": 5027
     },
     {
-      "alumos_poblacion": 36.75,
+      "alumnos_poblacion": 36.75,
       "cant_escuelas": 41,
       "cant_estatales": 37,
       "cant_privados": 4,
@@ -26,7 +26,7 @@
       "total_alumnos": 3813
     },
     {
-      "alumos_poblacion": 29.1,
+      "alumnos_poblacion": 29.1,
       "cant_escuelas": 527,
       "cant_estatales": 310,
       "cant_privados": 217,
@@ -38,7 +38,7 @@
       "total_alumnos": 150057
     },
     {
-      "alumos_poblacion": 30.36,
+      "alumnos_poblacion": 30.36,
       "cant_escuelas": 61,
       "cant_estatales": 57,
       "cant_privados": 4,
@@ -50,7 +50,7 @@
       "total_alumnos": 8282
     },
     {
-      "alumos_poblacion": 33.78,
+      "alumnos_poblacion": 33.78,
       "cant_escuelas": 411,
       "cant_estatales": 276,
       "cant_privados": 135,
@@ -62,7 +62,7 @@
       "total_alumnos": 111149
     },
     {
-      "alumos_poblacion": 41.48,
+      "alumnos_poblacion": 41.48,
       "cant_escuelas": 81,
       "cant_estatales": 78,
       "cant_privados": 3,
@@ -74,7 +74,7 @@
       "total_alumnos": 8159
     },
     {
-      "alumos_poblacion": 37.99,
+      "alumnos_poblacion": 37.99,
       "cant_escuelas": 174,
       "cant_estatales": 147,
       "cant_privados": 27,
@@ -86,7 +86,7 @@
       "total_alumnos": 23936
     },
     {
-      "alumos_poblacion": 33.09,
+      "alumnos_poblacion": 33.09,
       "cant_escuelas": 410,
       "cant_estatales": 312,
       "cant_privados": 98,
@@ -98,7 +98,7 @@
       "total_alumnos": 94241
     },
     {
-      "alumos_poblacion": 32.15,
+      "alumnos_poblacion": 32.15,
       "cant_escuelas": 116,
       "cant_estatales": 103,
       "cant_privados": 13,
@@ -110,7 +110,7 @@
       "total_alumnos": 13519
     },
     {
-      "alumos_poblacion": 40.24,
+      "alumnos_poblacion": 40.24,
       "cant_escuelas": 91,
       "cant_estatales": 76,
       "cant_privados": 15,
@@ -122,7 +122,7 @@
       "total_alumnos": 11896
     },
     {
-      "alumos_poblacion": 36.52,
+      "alumnos_poblacion": 36.52,
       "cant_escuelas": 365,
       "cant_estatales": 232,
       "cant_privados": 133,
@@ -134,7 +134,7 @@
       "total_alumnos": 105153
     },
     {
-      "alumos_poblacion": 37.06,
+      "alumnos_poblacion": 37.06,
       "cant_escuelas": 113,
       "cant_estatales": 90,
       "cant_privados": 23,
@@ -146,7 +146,7 @@
       "total_alumnos": 29689
     },
     {
-      "alumos_poblacion": 40.91,
+      "alumnos_poblacion": 40.91,
       "cant_escuelas": 116,
       "cant_estatales": 106,
       "cant_privados": 10,
@@ -158,7 +158,7 @@
       "total_alumnos": 13274
     },
     {
-      "alumos_poblacion": 32.54,
+      "alumnos_poblacion": 32.54,
       "cant_escuelas": 81,
       "cant_estatales": 75,
       "cant_privados": 6,
@@ -170,7 +170,7 @@
       "total_alumnos": 13102
     },
     {
-      "alumos_poblacion": 47.66,
+      "alumnos_poblacion": 47.66,
       "cant_escuelas": 72,
       "cant_estatales": 63,
       "cant_privados": 9,
@@ -182,7 +182,7 @@
       "total_alumnos": 10731
     },
     {
-      "alumos_poblacion": 42.05,
+      "alumnos_poblacion": 42.05,
       "cant_escuelas": 169,
       "cant_estatales": 122,
       "cant_privados": 47,
@@ -194,7 +194,7 @@
       "total_alumnos": 35197
     },
     {
-      "alumos_poblacion": 47.04,
+      "alumnos_poblacion": 47.04,
       "cant_escuelas": 113,
       "cant_estatales": 94,
       "cant_privados": 19,
@@ -206,7 +206,7 @@
       "total_alumnos": 20031
     },
     {
-      "alumos_poblacion": 37.77,
+      "alumnos_poblacion": 37.77,
       "cant_escuelas": 39,
       "cant_estatales": 36,
       "cant_privados": 3,
@@ -218,7 +218,7 @@
       "total_alumnos": 4855
     },
     {
-      "alumos_poblacion": 39.03,
+      "alumnos_poblacion": 39.03,
       "cant_escuelas": 71,
       "cant_estatales": 69,
       "cant_privados": 2,
@@ -230,7 +230,7 @@
       "total_alumnos": 8246
     },
     {
-      "alumos_poblacion": 52.32,
+      "alumnos_poblacion": 52.32,
       "cant_escuelas": 60,
       "cant_estatales": 55,
       "cant_privados": 5,
@@ -242,7 +242,7 @@
       "total_alumnos": 6038
     },
     {
-      "alumos_poblacion": 40.08,
+      "alumnos_poblacion": 40.08,
       "cant_escuelas": 54,
       "cant_estatales": 53,
       "cant_privados": 1,
@@ -254,7 +254,7 @@
       "total_alumnos": 5608
     },
     {
-      "alumos_poblacion": 32.04,
+      "alumnos_poblacion": 32.04,
       "cant_escuelas": 36,
       "cant_estatales": 33,
       "cant_privados": 3,
@@ -266,7 +266,7 @@
       "total_alumnos": 2516
     },
     {
-      "alumos_poblacion": 35.0,
+      "alumnos_poblacion": 35.0,
       "cant_escuelas": 113,
       "cant_estatales": 102,
       "cant_privados": 11,
@@ -278,7 +278,7 @@
       "total_alumnos": 15906
     },
     {
-      "alumos_poblacion": 33.33,
+      "alumnos_poblacion": 33.33,
       "cant_escuelas": 104,
       "cant_estatales": 93,
       "cant_privados": 11,
@@ -290,7 +290,7 @@
       "total_alumnos": 12882
     },
     {
-      "alumos_poblacion": 35.58,
+      "alumnos_poblacion": 35.58,
       "cant_escuelas": 139,
       "cant_estatales": 120,
       "cant_privados": 19,
@@ -302,7 +302,7 @@
       "total_alumnos": 21624
     },
     {
-      "alumos_poblacion": 34.06,
+      "alumnos_poblacion": 34.06,
       "cant_escuelas": 56,
       "cant_estatales": 44,
       "cant_privados": 12,
@@ -314,7 +314,7 @@
       "total_alumnos": 7897
     },
     {
-      "alumos_poblacion": 28.35,
+      "alumnos_poblacion": 28.35,
       "cant_escuelas": 63,
       "cant_estatales": 56,
       "cant_privados": 7,
@@ -326,7 +326,7 @@
       "total_alumnos": 4685
     },
     {
-      "alumos_poblacion": 30.44,
+      "alumnos_poblacion": 30.44,
       "cant_escuelas": 74,
       "cant_estatales": 70,
       "cant_privados": 4,
@@ -338,7 +338,7 @@
       "total_alumnos": 7243
     },
     {
-      "alumos_poblacion": 37.14,
+      "alumnos_poblacion": 37.14,
       "cant_escuelas": 116,
       "cant_estatales": 102,
       "cant_privados": 14,
@@ -350,7 +350,7 @@
       "total_alumnos": 13678
     },
     {
-      "alumos_poblacion": 34.47,
+      "alumnos_poblacion": 34.47,
       "cant_escuelas": 57,
       "cant_estatales": 53,
       "cant_privados": 4,
@@ -362,7 +362,7 @@
       "total_alumnos": 5466
     },
     {
-      "alumos_poblacion": 40.02,
+      "alumnos_poblacion": 40.02,
       "cant_escuelas": 59,
       "cant_estatales": 52,
       "cant_privados": 7,
@@ -374,7 +374,7 @@
       "total_alumnos": 10093
     },
     {
-      "alumos_poblacion": 36.14,
+      "alumnos_poblacion": 36.14,
       "cant_escuelas": 73,
       "cant_estatales": 63,
       "cant_privados": 10,
@@ -386,7 +386,7 @@
       "total_alumnos": 18594
     },
     {
-      "alumos_poblacion": 39.84,
+      "alumnos_poblacion": 39.84,
       "cant_escuelas": 266,
       "cant_estatales": 142,
       "cant_privados": 124,
@@ -398,7 +398,7 @@
       "total_alumnos": 70984
     },
     {
-      "alumos_poblacion": 36.96,
+      "alumnos_poblacion": 36.96,
       "cant_escuelas": 279,
       "cant_estatales": 172,
       "cant_privados": 107,
@@ -410,7 +410,7 @@
       "total_alumnos": 90190
     },
     {
-      "alumos_poblacion": 41.53,
+      "alumnos_poblacion": 41.53,
       "cant_escuelas": 66,
       "cant_estatales": 53,
       "cant_privados": 13,
@@ -422,7 +422,7 @@
       "total_alumnos": 10038
     },
     {
-      "alumos_poblacion": 46.89,
+      "alumnos_poblacion": 46.89,
       "cant_escuelas": 154,
       "cant_estatales": 113,
       "cant_privados": 41,
@@ -434,7 +434,7 @@
       "total_alumnos": 55713
     },
     {
-      "alumos_poblacion": 36.41,
+      "alumnos_poblacion": 36.41,
       "cant_escuelas": 391,
       "cant_estatales": 276,
       "cant_privados": 115,
@@ -446,7 +446,7 @@
       "total_alumnos": 127074
     },
     {
-      "alumos_poblacion": 40.83,
+      "alumnos_poblacion": 40.83,
       "cant_escuelas": 32,
       "cant_estatales": 28,
       "cant_privados": 4,
@@ -458,7 +458,7 @@
       "total_alumnos": 3337
     },
     {
-      "alumos_poblacion": 40.35,
+      "alumnos_poblacion": 40.35,
       "cant_escuelas": 92,
       "cant_estatales": 72,
       "cant_privados": 20,
@@ -470,7 +470,7 @@
       "total_alumnos": 13878
     },
     {
-      "alumos_poblacion": 43.03,
+      "alumnos_poblacion": 43.03,
       "cant_escuelas": 59,
       "cant_estatales": 55,
       "cant_privados": 4,
@@ -482,7 +482,7 @@
       "total_alumnos": 4690
     },
     {
-      "alumos_poblacion": 38.33,
+      "alumnos_poblacion": 38.33,
       "cant_escuelas": 49,
       "cant_estatales": 41,
       "cant_privados": 8,
@@ -494,7 +494,7 @@
       "total_alumnos": 5702
     },
     {
-      "alumos_poblacion": 44.63,
+      "alumnos_poblacion": 44.63,
       "cant_escuelas": 46,
       "cant_estatales": 42,
       "cant_privados": 4,
@@ -506,7 +506,7 @@
       "total_alumnos": 6866
     },
     {
-      "alumos_poblacion": 34.17,
+      "alumnos_poblacion": 34.17,
       "cant_escuelas": 24,
       "cant_estatales": 24,
       "cant_privados": 0,
@@ -518,7 +518,7 @@
       "total_alumnos": 947
     },
     {
-      "alumos_poblacion": 37.62,
+      "alumnos_poblacion": 37.62,
       "cant_escuelas": 45,
       "cant_estatales": 45,
       "cant_privados": 0,
@@ -530,7 +530,7 @@
       "total_alumnos": 4133
     },
     {
-      "alumos_poblacion": 53.09,
+      "alumnos_poblacion": 53.09,
       "cant_escuelas": 50,
       "cant_estatales": 45,
       "cant_privados": 5,
@@ -542,7 +542,7 @@
       "total_alumnos": 6795
     },
     {
-      "alumos_poblacion": 76.91,
+      "alumnos_poblacion": 76.91,
       "cant_escuelas": 31,
       "cant_estatales": 31,
       "cant_privados": 0,
@@ -554,7 +554,7 @@
       "total_alumnos": 2356
     },
     {
-      "alumos_poblacion": 43.2,
+      "alumnos_poblacion": 43.2,
       "cant_escuelas": 57,
       "cant_estatales": 54,
       "cant_privados": 3,
@@ -566,7 +566,7 @@
       "total_alumnos": 4458
     },
     {
-      "alumos_poblacion": 48.0,
+      "alumnos_poblacion": 48.0,
       "cant_escuelas": 48,
       "cant_estatales": 48,
       "cant_privados": 0,
@@ -578,7 +578,7 @@
       "total_alumnos": 5342
     },
     {
-      "alumos_poblacion": 33.67,
+      "alumnos_poblacion": 33.67,
       "cant_escuelas": 760,
       "cant_estatales": 455,
       "cant_privados": 305,
@@ -590,7 +590,7 @@
       "total_alumnos": 189946
     },
     {
-      "alumos_poblacion": 53.48,
+      "alumnos_poblacion": 53.48,
       "cant_escuelas": 122,
       "cant_estatales": 93,
       "cant_privados": 29,
@@ -602,7 +602,7 @@
       "total_alumnos": 36330
     },
     {
-      "alumos_poblacion": 25.23,
+      "alumnos_poblacion": 25.23,
       "cant_escuelas": 393,
       "cant_estatales": 243,
       "cant_privados": 150,
@@ -614,7 +614,7 @@
       "total_alumnos": 101723
     },
     {
-      "alumos_poblacion": 40.03,
+      "alumnos_poblacion": 40.03,
       "cant_escuelas": 54,
       "cant_estatales": 48,
       "cant_privados": 6,
@@ -626,7 +626,7 @@
       "total_alumnos": 7062
     },
     {
-      "alumos_poblacion": 36.61,
+      "alumnos_poblacion": 36.61,
       "cant_escuelas": 94,
       "cant_estatales": 89,
       "cant_privados": 5,
@@ -638,7 +638,7 @@
       "total_alumnos": 10604
     },
     {
-      "alumos_poblacion": 39.28,
+      "alumnos_poblacion": 39.28,
       "cant_escuelas": 63,
       "cant_estatales": 63,
       "cant_privados": 0,
@@ -650,7 +650,7 @@
       "total_alumnos": 4422
     },
     {
-      "alumos_poblacion": 38.62,
+      "alumnos_poblacion": 38.62,
       "cant_escuelas": 30,
       "cant_estatales": 25,
       "cant_privados": 5,
@@ -662,7 +662,7 @@
       "total_alumnos": 3406
     },
     {
-      "alumos_poblacion": 24.33,
+      "alumnos_poblacion": 24.33,
       "cant_escuelas": 186,
       "cant_estatales": 121,
       "cant_privados": 65,
@@ -674,7 +674,7 @@
       "total_alumnos": 41916
     },
     {
-      "alumos_poblacion": 26.86,
+      "alumnos_poblacion": 26.86,
       "cant_escuelas": 192,
       "cant_estatales": 94,
       "cant_privados": 98,
@@ -686,7 +686,7 @@
       "total_alumnos": 42476
     },
     {
-      "alumos_poblacion": 36.07,
+      "alumnos_poblacion": 36.07,
       "cant_escuelas": 213,
       "cant_estatales": 139,
       "cant_privados": 74,
@@ -698,7 +698,7 @@
       "total_alumnos": 83050
     },
     {
-      "alumos_poblacion": 38.51,
+      "alumnos_poblacion": 38.51,
       "cant_escuelas": 173,
       "cant_estatales": 142,
       "cant_privados": 31,
@@ -710,7 +710,7 @@
       "total_alumnos": 34146
     },
     {
-      "alumos_poblacion": 43.8,
+      "alumnos_poblacion": 43.8,
       "cant_escuelas": 104,
       "cant_estatales": 82,
       "cant_privados": 22,
@@ -722,7 +722,7 @@
       "total_alumnos": 26492
     },
     {
-      "alumos_poblacion": 31.98,
+      "alumnos_poblacion": 31.98,
       "cant_escuelas": 1271,
       "cant_estatales": 831,
       "cant_privados": 440,
@@ -734,7 +734,7 @@
       "total_alumnos": 401474
     },
     {
-      "alumos_poblacion": 39.77,
+      "alumnos_poblacion": 39.77,
       "cant_escuelas": 893,
       "cant_estatales": 546,
       "cant_privados": 347,
@@ -746,7 +746,7 @@
       "total_alumnos": 228473
     },
     {
-      "alumos_poblacion": 24.87,
+      "alumnos_poblacion": 24.87,
       "cant_escuelas": 473,
       "cant_estatales": 291,
       "cant_privados": 182,
@@ -758,7 +758,7 @@
       "total_alumnos": 112682
     },
     {
-      "alumos_poblacion": 45.92,
+      "alumnos_poblacion": 45.92,
       "cant_escuelas": 41,
       "cant_estatales": 41,
       "cant_privados": 0,
@@ -770,7 +770,7 @@
       "total_alumnos": 4447
     },
     {
-      "alumos_poblacion": 36.24,
+      "alumnos_poblacion": 36.24,
       "cant_escuelas": 73,
       "cant_estatales": 68,
       "cant_privados": 5,
@@ -782,7 +782,7 @@
       "total_alumnos": 8536
     },
     {
-      "alumos_poblacion": 39.16,
+      "alumnos_poblacion": 39.16,
       "cant_escuelas": 59,
       "cant_estatales": 59,
       "cant_privados": 0,
@@ -794,7 +794,7 @@
       "total_alumnos": 6406
     },
     {
-      "alumos_poblacion": 39.1,
+      "alumnos_poblacion": 39.1,
       "cant_escuelas": 133,
       "cant_estatales": 116,
       "cant_privados": 17,
@@ -806,7 +806,7 @@
       "total_alumnos": 16083
     },
     {
-      "alumos_poblacion": 41.96,
+      "alumnos_poblacion": 41.96,
       "cant_escuelas": 77,
       "cant_estatales": 71,
       "cant_privados": 6,
@@ -818,7 +818,7 @@
       "total_alumnos": 7137
     },
     {
-      "alumos_poblacion": 37.59,
+      "alumnos_poblacion": 37.59,
       "cant_escuelas": 94,
       "cant_estatales": 86,
       "cant_privados": 8,
@@ -830,7 +830,7 @@
       "total_alumnos": 12458
     },
     {
-      "alumos_poblacion": 33.29,
+      "alumnos_poblacion": 33.29,
       "cant_escuelas": 682,
       "cant_estatales": 391,
       "cant_privados": 291,
@@ -842,7 +842,7 @@
       "total_alumnos": 196881
     },
     {
-      "alumos_poblacion": 37.48,
+      "alumnos_poblacion": 37.48,
       "cant_escuelas": 169,
       "cant_estatales": 122,
       "cant_privados": 47,
@@ -854,7 +854,7 @@
       "total_alumnos": 35229
     },
     {
-      "alumos_poblacion": 49.38,
+      "alumnos_poblacion": 49.38,
       "cant_escuelas": 74,
       "cant_estatales": 71,
       "cant_privados": 3,
@@ -866,7 +866,7 @@
       "total_alumnos": 8199
     },
     {
-      "alumos_poblacion": 38.78,
+      "alumnos_poblacion": 38.78,
       "cant_escuelas": 43,
       "cant_estatales": 40,
       "cant_privados": 3,
@@ -878,7 +878,7 @@
       "total_alumnos": 3953
     },
     {
-      "alumos_poblacion": 29.63,
+      "alumnos_poblacion": 29.63,
       "cant_escuelas": 275,
       "cant_estatales": 149,
       "cant_privados": 126,
@@ -890,7 +890,7 @@
       "total_alumnos": 86143
     },
     {
-      "alumos_poblacion": 39.36,
+      "alumnos_poblacion": 39.36,
       "cant_escuelas": 74,
       "cant_estatales": 70,
       "cant_privados": 4,
@@ -902,7 +902,7 @@
       "total_alumnos": 7049
     },
     {
-      "alumos_poblacion": 47.45,
+      "alumnos_poblacion": 47.45,
       "cant_escuelas": 85,
       "cant_estatales": 68,
       "cant_privados": 17,
@@ -914,7 +914,7 @@
       "total_alumnos": 20595
     },
     {
-      "alumos_poblacion": 38.36,
+      "alumnos_poblacion": 38.36,
       "cant_escuelas": 141,
       "cant_estatales": 108,
       "cant_privados": 33,
@@ -926,7 +926,7 @@
       "total_alumnos": 22972
     },
     {
-      "alumos_poblacion": 32.16,
+      "alumnos_poblacion": 32.16,
       "cant_escuelas": 454,
       "cant_estatales": 304,
       "cant_privados": 150,
@@ -938,7 +938,7 @@
       "total_alumnos": 151162
     },
     {
-      "alumos_poblacion": 39.43,
+      "alumnos_poblacion": 39.43,
       "cant_escuelas": 52,
       "cant_estatales": 43,
       "cant_privados": 9,
@@ -950,7 +950,7 @@
       "total_alumnos": 6897
     },
     {
-      "alumos_poblacion": 58.67,
+      "alumnos_poblacion": 58.67,
       "cant_escuelas": 22,
       "cant_estatales": 22,
       "cant_privados": 0,
@@ -962,7 +962,7 @@
       "total_alumnos": 3287
     },
     {
-      "alumos_poblacion": 39.59,
+      "alumnos_poblacion": 39.59,
       "cant_escuelas": 477,
       "cant_estatales": 315,
       "cant_privados": 162,
@@ -974,7 +974,7 @@
       "total_alumnos": 150662
     },
     {
-      "alumos_poblacion": 33.42,
+      "alumnos_poblacion": 33.42,
       "cant_escuelas": 415,
       "cant_estatales": 238,
       "cant_privados": 177,
@@ -986,7 +986,7 @@
       "total_alumnos": 103410
     },
     {
-      "alumos_poblacion": 35.43,
+      "alumnos_poblacion": 35.43,
       "cant_escuelas": 67,
       "cant_estatales": 61,
       "cant_privados": 6,
@@ -998,7 +998,7 @@
       "total_alumnos": 5597
     },
     {
-      "alumos_poblacion": 36.09,
+      "alumnos_poblacion": 36.09,
       "cant_escuelas": 177,
       "cant_estatales": 134,
       "cant_privados": 43,
@@ -1010,7 +1010,7 @@
       "total_alumnos": 32162
     },
     {
-      "alumos_poblacion": 39.67,
+      "alumnos_poblacion": 39.67,
       "cant_escuelas": 250,
       "cant_estatales": 194,
       "cant_privados": 56,
@@ -1022,7 +1022,7 @@
       "total_alumnos": 41247
     },
     {
-      "alumos_poblacion": 45.03,
+      "alumnos_poblacion": 45.03,
       "cant_escuelas": 107,
       "cant_estatales": 99,
       "cant_privados": 8,
@@ -1034,7 +1034,7 @@
       "total_alumnos": 12581
     },
     {
-      "alumos_poblacion": 46.28,
+      "alumnos_poblacion": 46.28,
       "cant_escuelas": 123,
       "cant_estatales": 116,
       "cant_privados": 7,
@@ -1046,7 +1046,7 @@
       "total_alumnos": 17774
     },
     {
-      "alumos_poblacion": 46.05,
+      "alumnos_poblacion": 46.05,
       "cant_escuelas": 27,
       "cant_estatales": 25,
       "cant_privados": 2,
@@ -1058,7 +1058,7 @@
       "total_alumnos": 2777
     },
     {
-      "alumos_poblacion": 33.04,
+      "alumnos_poblacion": 33.04,
       "cant_escuelas": 196,
       "cant_estatales": 154,
       "cant_privados": 42,
@@ -1070,7 +1070,7 @@
       "total_alumnos": 32779
     },
     {
-      "alumos_poblacion": 46.02,
+      "alumnos_poblacion": 46.02,
       "cant_escuelas": 36,
       "cant_estatales": 36,
       "cant_privados": 0,
@@ -1082,7 +1082,7 @@
       "total_alumnos": 1527
     },
     {
-      "alumos_poblacion": 48.19,
+      "alumnos_poblacion": 48.19,
       "cant_escuelas": 370,
       "cant_estatales": 173,
       "cant_privados": 197,
@@ -1094,7 +1094,7 @@
       "total_alumnos": 112029
     },
     {
-      "alumos_poblacion": 48.78,
+      "alumnos_poblacion": 48.78,
       "cant_escuelas": 36,
       "cant_estatales": 29,
       "cant_privados": 7,
@@ -1106,7 +1106,7 @@
       "total_alumnos": 10081
     },
     {
-      "alumos_poblacion": 45.28,
+      "alumnos_poblacion": 45.28,
       "cant_escuelas": 71,
       "cant_estatales": 60,
       "cant_privados": 11,
@@ -1118,7 +1118,7 @@
       "total_alumnos": 27260
     },
     {
-      "alumos_poblacion": 26.67,
+      "alumnos_poblacion": 26.67,
       "cant_escuelas": 67,
       "cant_estatales": 56,
       "cant_privados": 11,
@@ -1130,7 +1130,7 @@
       "total_alumnos": 4369
     },
     {
-      "alumos_poblacion": 37.69,
+      "alumnos_poblacion": 37.69,
       "cant_escuelas": 39,
       "cant_estatales": 39,
       "cant_privados": 0,
@@ -1142,7 +1142,7 @@
       "total_alumnos": 3529
     },
     {
-      "alumos_poblacion": 31.87,
+      "alumnos_poblacion": 31.87,
       "cant_escuelas": 589,
       "cant_estatales": 346,
       "cant_privados": 243,
@@ -1154,7 +1154,7 @@
       "total_alumnos": 165354
     },
     {
-      "alumos_poblacion": 40.24,
+      "alumnos_poblacion": 40.24,
       "cant_escuelas": 69,
       "cant_estatales": 66,
       "cant_privados": 3,
@@ -1166,7 +1166,7 @@
       "total_alumnos": 11743
     },
     {
-      "alumos_poblacion": 37.86,
+      "alumnos_poblacion": 37.86,
       "cant_escuelas": 59,
       "cant_estatales": 55,
       "cant_privados": 4,
@@ -1178,7 +1178,7 @@
       "total_alumnos": 5466
     },
     {
-      "alumos_poblacion": 38.12,
+      "alumnos_poblacion": 38.12,
       "cant_escuelas": 58,
       "cant_estatales": 53,
       "cant_privados": 5,
@@ -1190,7 +1190,7 @@
       "total_alumnos": 5891
     },
     {
-      "alumos_poblacion": 34.41,
+      "alumnos_poblacion": 34.41,
       "cant_escuelas": 70,
       "cant_estatales": 66,
       "cant_privados": 4,
@@ -1202,7 +1202,7 @@
       "total_alumnos": 7860
     },
     {
-      "alumos_poblacion": 43.68,
+      "alumnos_poblacion": 43.68,
       "cant_escuelas": 58,
       "cant_estatales": 58,
       "cant_privados": 0,
@@ -1214,7 +1214,7 @@
       "total_alumnos": 4762
     },
     {
-      "alumos_poblacion": 37.16,
+      "alumnos_poblacion": 37.16,
       "cant_escuelas": 65,
       "cant_estatales": 58,
       "cant_privados": 7,
@@ -1226,7 +1226,7 @@
       "total_alumnos": 7328
     },
     {
-      "alumos_poblacion": 34.08,
+      "alumnos_poblacion": 34.08,
       "cant_escuelas": 88,
       "cant_estatales": 82,
       "cant_privados": 6,
@@ -1238,7 +1238,7 @@
       "total_alumnos": 10088
     },
     {
-      "alumos_poblacion": 35.99,
+      "alumnos_poblacion": 35.99,
       "cant_escuelas": 25,
       "cant_estatales": 25,
       "cant_privados": 0,
@@ -1250,7 +1250,7 @@
       "total_alumnos": 3125
     },
     {
-      "alumos_poblacion": 37.31,
+      "alumnos_poblacion": 37.31,
       "cant_escuelas": 68,
       "cant_estatales": 59,
       "cant_privados": 9,
@@ -1262,7 +1262,7 @@
       "total_alumnos": 10893
     },
     {
-      "alumos_poblacion": 43.23,
+      "alumnos_poblacion": 43.23,
       "cant_escuelas": 85,
       "cant_estatales": 76,
       "cant_privados": 9,
@@ -1274,7 +1274,7 @@
       "total_alumnos": 9006
     },
     {
-      "alumos_poblacion": 39.48,
+      "alumnos_poblacion": 39.48,
       "cant_escuelas": 68,
       "cant_estatales": 61,
       "cant_privados": 7,
@@ -1286,7 +1286,7 @@
       "total_alumnos": 8423
     },
     {
-      "alumos_poblacion": 42.29,
+      "alumnos_poblacion": 42.29,
       "cant_escuelas": 32,
       "cant_estatales": 29,
       "cant_privados": 3,
@@ -1298,7 +1298,7 @@
       "total_alumnos": 3434
     },
     {
-      "alumos_poblacion": 28.73,
+      "alumnos_poblacion": 28.73,
       "cant_escuelas": 212,
       "cant_estatales": 135,
       "cant_privados": 77,
@@ -1310,7 +1310,7 @@
       "total_alumnos": 43425
     },
     {
-      "alumos_poblacion": 29.17,
+      "alumnos_poblacion": 29.17,
       "cant_escuelas": 386,
       "cant_estatales": 146,
       "cant_privados": 240,
@@ -1322,7 +1322,7 @@
       "total_alumnos": 85050
     },
     {
-      "alumos_poblacion": 37.83,
+      "alumnos_poblacion": 37.83,
       "cant_escuelas": 352,
       "cant_estatales": 160,
       "cant_privados": 192,
@@ -1334,7 +1334,7 @@
       "total_alumnos": 95749
     },
     {
-      "alumos_poblacion": 33.27,
+      "alumnos_poblacion": 33.27,
       "cant_escuelas": 224,
       "cant_estatales": 162,
       "cant_privados": 62,
@@ -1346,7 +1346,7 @@
       "total_alumnos": 45869
     },
     {
-      "alumos_poblacion": 41.19,
+      "alumnos_poblacion": 41.19,
       "cant_escuelas": 128,
       "cant_estatales": 115,
       "cant_privados": 13,
@@ -1358,7 +1358,7 @@
       "total_alumnos": 22755
     },
     {
-      "alumos_poblacion": 55.51,
+      "alumnos_poblacion": 55.51,
       "cant_escuelas": 84,
       "cant_estatales": 71,
       "cant_privados": 13,
@@ -1370,7 +1370,7 @@
       "total_alumnos": 24719
     },
     {
-      "alumos_poblacion": 52.34,
+      "alumnos_poblacion": 52.34,
       "cant_escuelas": 44,
       "cant_estatales": 39,
       "cant_privados": 5,
@@ -1382,7 +1382,7 @@
       "total_alumnos": 4661
     },
     {
-      "alumos_poblacion": 35.82,
+      "alumnos_poblacion": 35.82,
       "cant_escuelas": 216,
       "cant_estatales": 167,
       "cant_privados": 49,
@@ -1394,7 +1394,7 @@
       "total_alumnos": 38734
     },
     {
-      "alumos_poblacion": 50.08,
+      "alumnos_poblacion": 50.08,
       "cant_escuelas": 49,
       "cant_estatales": 49,
       "cant_privados": 0,
@@ -1406,7 +1406,7 @@
       "total_alumnos": 4155
     },
     {
-      "alumos_poblacion": 37.52,
+      "alumnos_poblacion": 37.52,
       "cant_escuelas": 425,
       "cant_estatales": 231,
       "cant_privados": 194,
@@ -1418,7 +1418,7 @@
       "total_alumnos": 113038
     },
     {
-      "alumos_poblacion": 49.88,
+      "alumnos_poblacion": 49.88,
       "cant_escuelas": 15,
       "cant_estatales": 15,
       "cant_privados": 0,
@@ -1430,7 +1430,7 @@
       "total_alumnos": 869
     },
     {
-      "alumos_poblacion": 36.82,
+      "alumnos_poblacion": 36.82,
       "cant_escuelas": 60,
       "cant_estatales": 55,
       "cant_privados": 5,
@@ -1442,7 +1442,7 @@
       "total_alumnos": 4330
     },
     {
-      "alumos_poblacion": 44.34,
+      "alumnos_poblacion": 44.34,
       "cant_escuelas": 131,
       "cant_estatales": 116,
       "cant_privados": 15,
@@ -1454,7 +1454,7 @@
       "total_alumnos": 17817
     },
     {
-      "alumos_poblacion": 34.24,
+      "alumnos_poblacion": 34.24,
       "cant_escuelas": 129,
       "cant_estatales": 108,
       "cant_privados": 21,
@@ -1466,7 +1466,7 @@
       "total_alumnos": 19602
     },
     {
-      "alumos_poblacion": 23.02,
+      "alumnos_poblacion": 23.02,
       "cant_escuelas": 342,
       "cant_estatales": 205,
       "cant_privados": 137,
@@ -1478,7 +1478,7 @@
       "total_alumnos": 77482
     },
     {
-      "alumos_poblacion": 48.78,
+      "alumnos_poblacion": 48.78,
       "cant_escuelas": 27,
       "cant_estatales": 27,
       "cant_privados": 0,
@@ -1490,7 +1490,7 @@
       "total_alumnos": 3629
     },
     {
-      "alumos_poblacion": 24.28,
+      "alumnos_poblacion": 24.28,
       "cant_escuelas": 326,
       "cant_estatales": 132,
       "cant_privados": 194,
@@ -1502,7 +1502,7 @@
       "total_alumnos": 66573
     },
     {
-      "alumos_poblacion": 46.37,
+      "alumnos_poblacion": 46.37,
       "cant_escuelas": 46,
       "cant_estatales": 33,
       "cant_privados": 13,
@@ -1514,7 +1514,7 @@
       "total_alumnos": 11261
     },
     {
-      "alumos_poblacion": 42.99,
+      "alumnos_poblacion": 42.99,
       "cant_escuelas": 104,
       "cant_estatales": 99,
       "cant_privados": 5,
@@ -1526,7 +1526,7 @@
       "total_alumnos": 11401
     },
     {
-      "alumos_poblacion": 36.08,
+      "alumnos_poblacion": 36.08,
       "cant_escuelas": 169,
       "cant_estatales": 126,
       "cant_privados": 43,

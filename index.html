@@ -17,12 +17,17 @@
 <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
 <script src="lib/konami.pack.js"></script>
 
+<img src="provincia.png" alt="Provincia de Buenos Aires" style="width:304px;height:228px;float:left;position:absolute;left:0;">
+
 <h1>
   <a href="http://codementum.org" id="codementumIcon"></a>
   Tecnologías Aplicadas a Business Intelligence
 </h1>
 
 <p>Trabajo Final: Datos Abiertos Provincia de Buenos Aires</p>
+<p>Datos: Unidades Educativas de la Provincia de Buenos Aires</p>
+
+
 <script src="http://codementum.org/lib/codementumIcon.js"></script>
 
 <script>
@@ -36,7 +41,7 @@ var dFill = d3.scale.linear()
 
 var sectorFill = d3.scale.linear()
     .domain([0, 0.7])
-    .range([d3.hsl('#F5F5F5'), d3.hsl('#556B2F')]);
+    .range([d3.hsl('#c2f0c2'), d3.hsl('#556B2F')]);
 
 // making a custom scale
 // for colors
@@ -140,7 +145,7 @@ function toggleMetric() {
 vis.append("rect")
   .attr("id", "massButton")
   .attr("x", r/2 - 50)
-  .attr("y", 10)
+  .attr("y", 80)
   .attr("width", 10)
   .attr("height", 10)
   .style("stroke", 'black')
@@ -150,7 +155,7 @@ vis.append("rect")
 vis.append("rect")
   .attr("id", "distanceButton")
   .attr("x", r/2 - 50)
-  .attr("y", 30)
+  .attr("y", 100)
   .attr("width", 10)
   .attr("height", 10)
   .style("stroke", 'black')
@@ -160,7 +165,7 @@ vis.append("rect")
 vis.append("rect")
   .attr("id", "sectorButton")
   .attr("x", r/2 - 50)
-  .attr("y", 50)
+  .attr("y", 120)
   .attr("width", 10)
   .attr("height", 10)
   .style("stroke", 'black')
@@ -171,21 +176,21 @@ vis.append("text")
   .attr("id", "distanceButtonText")
   .style("font-size", "12px")
   .attr("x", r/2+15-50)
-  .attr("y", 19)
+  .attr("y", 89)
   .text("según promedio de alumnos por escuela");
 
 vis.append("text")
   .attr("id", "distanceButtonText")
   .style("font-size", "12px")
   .attr("x", r/2+15-50)
-  .attr("y", 39)
+  .attr("y", 109)
   .text("según cantidad de escuelas / poblacion");
 
 vis.append("text")
   .attr("id", "distanceButtonText")
   .style("font-size", "12px")
   .attr("x", r/2+15-50)
-  .attr("y", 59)
+  .attr("y", 129)
   .text("según cantidad de escuelas publicas y privadas");
 
 var updateNodes = function() {
@@ -231,7 +236,7 @@ d3.json("results.json", function(json) {
         "\n cantidad de escuelas: " + d.cant_escuelas + 
         "\n poblacion: " + d.poblacion +
         "\n total de alumnos: " + d.total_alumnos +
-        "\n desvio de numero de alumnos: " + d.desvio_alumnos; 
+        "\n porcentaje de escuelas privadas: " + d.cant_privados.toFixed(3) * 100 + "%"; 
     });
 
   // initial values
@@ -311,6 +316,19 @@ console.log('(after you\'re done, try the konami code: up, up, down, down, left,
 </script>
 
 <footer>
+  <p>Desarrolladores</p>
   <a href="https://github.com/citin" rel="author">Andrés Bernardi</a> <br>
   <a href="../" rel="author">Sergio Barragán</a>
+
+  <p>Fuentes</p>
+  <p>
+  <a href="http://datos.gba.gob.ar/" target="_blank">Datos Abiertos Provincia de Buenos Aires</a>
+  </p>
+  <p>
+  <a href="http://www.estadistica.ec.gba.gov.ar/dpe/Estadistica/censo2010/censo2010resultados.html" target="_blank">Resultados Censo 2010</a>
+  </p>
+  <p>
+  <a href="https://github.com/codementum/exoplanets" target="_blank">Template: Exoplanets</a>
+  </p>
+
 </footer>
