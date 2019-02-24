@@ -2,28 +2,43 @@
 <meta charset="utf-8">
 <title>codementum.org - Exoplanets</title>
 <head>
-<!-- Hotjar Tracking Code for http://tabi-final.herokuapp.com/ -->
-<script>
+
+
+  <!-- Hotjar Tracking Code for http://tabi-final.herokuapp.com/ -->
+  <script>
     (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1211571,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1211571,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  </script>
+
+  <!-- Begin Inspectlet Asynchronous Code -->
+  <script type="text/javascript">
+    (function() {
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 84738638]);
+      var ldinsp = function(){
+        if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=84738638&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+      setTimeout(ldinsp, 0);
+    })();
+  </script>
+  <!-- End Inspectlet Asynchronous Code -->
+
 </head>
 <style>
-  @import url(http://fonts.googleapis.com/css?family=Istok+Web);
-  @import url(http://fonts.googleapis.com/css?family=Oswald);
-  @import url(http://codementum.org/lib/main.css);
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://codementum.org/lib/main.css);
 
-  #planet {
-    font-family: "Oswald", serif;
-  }
+#planet {
+  font-family: "Oswald", serif;
+}
 
-  </style>
+</style>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
@@ -44,16 +59,16 @@
 
 <script>
 
-var r = 960
+  var r = 960
   , format = d3.format(".2f");
 
 var dFill = d3.scale.linear()
-    .domain([0, 0.30])
-    .range([d3.hsl('#FF0000'), d3.hsl('#006400')]);
+  .domain([0, 0.30])
+  .range([d3.hsl('#FF0000'), d3.hsl('#006400')]);
 
 var sectorFill = d3.scale.linear()
-    .domain([0, 0.7])
-    .range([d3.hsl('#c2f0c2'), d3.hsl('#556B2F')]);
+  .domain([0, 0.7])
+  .range([d3.hsl('#c2f0c2'), d3.hsl('#556B2F')]);
 
 // making a custom scale
 // for colors
@@ -109,7 +124,7 @@ vis.append("text")
   .attr("y", 110)
   .style("text-anchor", "left")
   .text("Cantidad de escuelas / Poblacion:");
-  
+
 // alumnos_poblacion info
 vis.append("text")
   .attr("id", "alumnos_poblacion")
@@ -233,14 +248,14 @@ var updateNodes = function() {
     }
   });
 }
-  
+
 d3.json("results.json", function(json) {
   var node = vis.selectAll("g.node")
-      .data(bubble.nodes(classes(json))
+    .data(bubble.nodes(classes(json))
       .filter(function(d) { return !d.children; }))
     .enter().append("g")
-      .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + d.x + "," + (80 + d.y) + ")"; });
+    .attr("class", "node")
+    .attr("transform", function(d) { return "translate(" + d.x + "," + (80 + d.y) + ")"; });
 
   node.append("title")
     .text(function(d) { 
@@ -279,7 +294,7 @@ function classes(root) {
       escuelas_poblacion: node.escuelas_poblacion, // muestro arriba
       alumnos_poblacion: node.alumnos_poblacion,// muestro arriba
       prom_alumnos: node.prom_alumnos,
-    
+
       cant_escuelas: node.cant_escuelas, // muestro en el nodo
       poblacion: node.poblacion,
       total_alumnos: node.total_alumnos,
@@ -300,36 +315,36 @@ function colorBlind(){
     .style("fill-opacity", ".7");
 
   vis.transition()
-   .duration(1000)
-   .select("text#colorBlind")
-   .attr("fill", "#a9a9a9")
-   .style("fill-opacity", ".7");
+    .duration(1000)
+    .select("text#colorBlind")
+    .attr("fill", "#a9a9a9")
+    .style("fill-opacity", ".7");
 }
 </script>
 
 <script>
-(function (){
-  "use strict";
+  (function (){
+    "use strict";
 
-  var konami = new Konami();
-  
-  konami.code = function() {
-    colorBlind();  
-  };
-  
-  konami.iphone.code = function() {
-    colorBlind();  
-  };
-  
-  konami.load()
-}());
+    var konami = new Konami();
+
+    konami.code = function() {
+      colorBlind();  
+    };
+
+    konami.iphone.code = function() {
+      colorBlind();  
+    };
+
+    konami.load()
+  }());
 
 console.log('(after you\'re done, try the konami code: up, up, down, down, left, right, left, right, b, a, enter - refresh to start over)');
 </script>
 
 <footer>
 
-    
+
   <h4>Grupo 2 - Desarrolladores:</h4>
   <ul>
     <li><a href="https://github.com/citin" rel="author">Andrés Bernardi</a> <br></li>
